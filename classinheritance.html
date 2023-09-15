@@ -1,0 +1,26 @@
+<script>
+    class Car{
+        constructor(name){
+            this.carName = name 
+        }
+        getCarName(){
+            console.log(this.carName)
+            return ("My Car Name Is "+ this.carName);
+        }
+    }
+
+
+    class Model extends Car{
+        constructor(brand , name ){
+            super(name);
+            this.brand= brand
+            this.name = name
+        }
+        getCarInfo(){
+            return(`Car Information  : - ${this.brand} ${this.name}`)
+        }
+    }
+    const mycar = new Model("Ford","audi")
+    mycar.getCarName()
+    console.log(mycar.getCarInfo());
+</script>

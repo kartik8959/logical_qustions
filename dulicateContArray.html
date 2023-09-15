@@ -1,0 +1,38 @@
+<script>
+let count = {};
+let uniqueCount = ['a','b','c','d','d','e','b','c','f','g','h','h','h','e','a'];
+
+// let data = uniqueCount.reduce((obj,ele)=>{
+//     if(!obj[ele]){
+//         obj[ele]=1
+//     }
+//     else{
+//         obj[ele]++;
+//     }
+//     return obj
+// },{})
+
+// console.log(data);
+// console.log(uniqueCount);
+
+uniqueCount.forEach((x)=>{
+    count[x] = (count[x] || 0)+1
+})
+
+let minFreq=0, maxFreq=0, min_value=Number.maxValue, maxValue=0
+
+for(let val in count ){
+    if(count[val] > maxFreq){
+        maxFreq = count[val]
+        maxValue=val
+    }
+    else{
+        minFreq= count[val]
+        min_value=val
+    }
+}
+
+console.log(count,"count",maxValue);
+</script>
+
+<!-- array Reduce -->

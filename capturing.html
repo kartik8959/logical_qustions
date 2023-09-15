@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    div {
+      padding: 30px;
+      border: 1px solid red;
+    }
+  </style>
+</head>
+<body>
+  <div id="div1">
+    Div1
+    <div id="div2">
+      Div2
+      <div id="div3">
+        Div3
+      </div>
+    </div>
+  </div>
+  <script>
+    var divsRef = document.getElementsByTagName('div');
+
+    // Loop through the collection and add an event listener to each div
+    for (var i = 0; i < divsRef.length; i++) {
+      divsRef[i].addEventListener('click', function () {
+        alert(this.id);
+      },  true );
+    }
+  </script>
+</body>
+</html>

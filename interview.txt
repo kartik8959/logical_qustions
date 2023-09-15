@@ -1,0 +1,62 @@
+Before promises in JS
+=====================
+
+
+Before the introduction of Promises in JavaScript, callbacks were commonly used to handle asynchronous operations. Callbacks allow you to specify a function that will be executed once an asynchronous operation completes. Here's an example to illustrate the usage of callbacks:
+
+```javascript
+function fetchData(callback) {
+  // Simulating an asynchronous operation
+  setTimeout(function () {
+    const data = "Sample data";
+    callback(null, data); // Pass null as the error argument and data as the result
+  }, 2000);
+}
+
+// Usage example:
+fetchData(function (error, result) {
+  if (error) {
+    console.error("Error:", error);
+  } else {
+    console.log("Result:", result);
+  }
+});
+```
+
+In the above example, the `fetchData` function simulates an asynchronous operation, such as fetching data from an API. It takes a callback function as a parameter. Once the operation completes, it calls the callback function, passing an error (if any) as the first argument and the result as the second argument.
+
+To handle asynchronous operations with callbacks, you provide the logic inside the callback function. This can lead to callback hell or the pyramid of doom, where multiple asynchronous operations are nested within each other. Promises were introduced to address this issue and provide a more elegant way to handle asynchronous code.
+
+
+
+ECMAScript in js 
+==================
+
+ECMAScript is a standardized, general-purpose programming language intended to ensure the interoperability of web pages across different web browsers. It is standardized by Ecma International in the document ECMA-262.
+
+ECMAScript is commonly used for client-side scripting on the World Wide Web, and it is increasingly being used to write server-side applications and services using Node. js and other runtime environments.
+
+The first edition of ECMA-262 was adopted by the Ecma General Assembly in June 1997. Several editions of the language standard have been published since then, the latest being ECMAScript 2022, which was published in June 2022.
+
+ECMAScript is a multi-paradigm language, meaning that it supports multiple programming styles. The most common programming styles used in ECMAScript are:
+
+Object-oriented programming
+Functional programming
+Imperative programming
+ECMAScript is a powerful language that can be used to create a wide variety of web applications and services. It is a popular choice for developers because it is easy to learn and use, and it is supported by all major web browsers.
+
+Here are some of the features of ECMAScript:
+
+Object-oriented programming: ECMAScript supports object-oriented programming, which allows developers to create objects that can contain data and methods.
+Functional programming: ECMAScript supports functional programming, which allows developers to write code that is more declarative and less procedural.
+Imperative programming: ECMAScript supports imperative programming, which allows developers to write code that tells the computer what to do step-by-step.
+Strong typing: ECMAScript is a strongly typed language, which means that the types of variables and expressions must be declared. This helps to prevent errors and makes code more readable.
+Garbage collection: ECMAScript uses garbage collection to automatically manage memory. This frees developers from having to worry about memory management, which can be a complex and error-prone task.
+ECMAScript is a powerful and versatile language that is used by millions of developers around the world. It is a great choice for developing web applications and services, and it is easy to learn and use.
+
+Currying in js 
+==============
+Currying is a function that accepts multiple arguments. It will transform this function into a series of functions, where every little function will accept one argument:
+
+
+

@@ -1,0 +1,35 @@
+<script>
+
+    // let arr_sort = new Int32Array([10,20,300,10,200,500,60])
+
+    // let sorted_array = arr_sort.sort();
+    // sorted_array.forEach((ele)=>{
+    //     console.log(ele);
+    // })
+
+
+
+    let arr= [{
+        age :10
+    },{
+        age :20
+    },
+    {
+        age :200
+    },
+    {
+        age :100
+    },{
+        age :500
+    },{
+        age :60
+    },{
+        age : 80
+    }]
+    let aages =arr.map((obj)=>{
+        console.log(obj.age);
+        return obj.age
+    })
+    console.log(new Float32Array(aages).sort());
+    console.log(new Float(aages).sort(),"hshhaha");
+</script>

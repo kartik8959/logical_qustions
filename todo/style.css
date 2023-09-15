@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#todo-input {
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    border-color: #bbb1b1;
+    font-size: 20px;
+}
+
+.todo-btn{
+    padding: 10px;
+    border-radius:5px;
+    background-color: rgb(58, 132, 155);
+    width: 150px;
+    cursor: pointer;
+    color: whitesmoke;
+    border-color: #fff;
+    border: none;
+   
+}
+.todo-btn:active, .todo-item-btn:active{
+  opacity: 0.9;
+  transition: 0s
+}
+#list p{
+    width:60%;
+    font-size:20px;
+    padding: 10px;
+}
+#list {
+width:50%;
+margin-top: 10px;
+
+}
+.todo-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-btns{
+    margin-right: 10px;
+}
+.todo-item-btn{
+    padding: 6px 10px;
+    border-radius: 5px;
+    border:none;
+    color:#fff;
+    cursor: pointer;
+}
+.edit-todo{
+    background-color: green; 
+}
+.delete-todo{
+    background-color: rgb(235, 91, 91); 
+}
